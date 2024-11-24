@@ -1,0 +1,27 @@
+#counterLabel{
+    display:block;
+    text-align:center;
+    font-size : 10em;
+    font-family:Helvetica;
+}
+#counterBtn{
+    /* display:block; */
+    text-align:center;
+}
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color:white;
+    background-color:hsl(214, 100%, 74%);
+    border-radius: 5px;
+    cursor:pointer;
+    /*cursor: pointer; is used in CSS to indicate that an element is interactive and can be clicked, such as buttons or links. When the mouse hovers over the element, the cursor changes to a hand icon, enhancing user experience by signaling that the element is actionable*/
+    transition:background-color 0.25s;
+    /* transition in CSS is used to create smooth, gradual changes between property values over a specified duration. It enhances the user experience by animating changes, such as color, size, or position, when elements are interacted with (like hover effects). This makes the interface feel more dynamic and responsive. */
+}
+/* hover in CSS is a pseudo-class used to apply styles to an element when the mouse cursor is over it. It's commonly used to create interactive effects, like changing colors or revealing additional information, enhancing user experience and visual feedback on elements like buttons and links. */
+.buttons:hover{
+    background-color:hsl(214, 100%, 20%);
+}
+
+
