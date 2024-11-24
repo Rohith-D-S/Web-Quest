@@ -1,22 +1,10 @@
-//COUTER PROGRAM
+//RANDOM NUMBER GENERATOR
 
-const decreaseBtn=document.getElementById("dcrBtn");
-const increaseBtn=document.getElementById("incBtn");
-const resetBtn=document.getElementById("rstBtn");
-const countLabel=document.getElementById("counterLabel");
-count=0;
-
-decreaseBtn.onclick=function(){
-    count--;
-    countLabel.textContent=count;
-}
-
-resetBtn.onclick=function(){
-    count=0;
-    countLabel.textContent=count;
-}
-
-increaseBtn.onclick=function(){
-    count++;
-    countLabel.textContent=count;
+const myLabel=document.getElementById("myLabel");
+const myButton=document.getElementById("myButton");
+const max=6,min=1;
+let randNumber;
+myButton.onclick=function(){
+    randNumber=Number(Math.floor((Math.random()*(max-min+1))+min));
+    myLabel.textContent=randNumber;
 }
